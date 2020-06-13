@@ -74,12 +74,18 @@
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#Project">Project</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#myCode">myCode</a>
-        </li>
+        </li> -->
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#review">review</a>
+
+        <br><br>
+        <li class="nav-item">
+          <a class="nav-link" href="../doit_ppt.pptx">DOIT PPT파일</a>
+        </li>
       </ul>
+
     </div>
   </nav>
 
@@ -134,79 +140,101 @@
         
         <table>
           <tr>
-            <td><img src="../img/petner_main.JPG" style="width: 400px; height: 300px; border: 1px solid rgb(240, 184, 205);"></td>
+            <td><img src="../img/doit_main.JPG" style="width: 400px; height: 300px; border: 1px solid rgb(240, 184, 205);"></td>
           </tr>
           <tr>
             <td style="padding-bottom: 20px; padding-top: 20px;">프로젝트 메인 화면입니다.<br>
-              주요 기능으로는 미용,호텔,병원 중개 기능, 결제, 게시판, 관리자페이지 등입니다.</td>
+              메뉴는 Home, About, Study, Community, Event, Mypage, Admin 페이지 등이 있습니다.<br>
+              주요 기능으로는 IT 스터디 중개, 가입, 탈퇴, 관리자모드 등이 있습니다.</td>
           </tr>
         </table><br>
 
         <table>
           <tr>
-            <td><img src="../img/petner_home.JPG" style="margin-right:150px; width: 400px; height: 300px; border: 1px solid rgb(240, 184, 205);" onclick="full_scr1();"></td>
-            <td><img src="../img/petner_detail.JPG" style="width: 400px; height: 300px; border: 1px solid rgb(240, 184, 205);" onclick="full_scr2();"></td>
+            <td><img src="../img/doit_join.JPG" style="margin-right:150px; width: 400px; height: 300px; border: 1px solid rgb(240, 184, 205);" onclick="full_scr1();"></td>
+            <td><img src="../img/doit_join2.JPG" style="width: 400px; height: 300px; border: 1px solid rgb(240, 184, 205);" onclick="full_scr2();"></td>
           </tr>
           <tr>
-            <td style="padding-top: 20px; padding-bottom: 40px;">Petner+의 호텔,병원,미용의 공통적인 Home페이지입니다.<br>
-            Type으로 구분되어 있으며, 페이징처리, 검색기능이 있습니다.</td>
-            <td style="padding-top: 20px; padding-bottom: 40px;">Penter+의 호텔,병원,미용의 공통적인 상세페이지입니다.<br>
-            사진은 Slide로 넘어가게 처리되어 있습니다.<br>
-            체크박스로 세부서비스를 미리 볼 수 있습니다.<br>
-            체크박스 값을 불러온 뒤 split으로 하나하나 나눠서 출력합니다.<br>
-            아래쪽 메뉴는 3개의 탭으로 나뉘어져 있고, 상세정보/후기/문의로 되어 있습니다.</td>
+            <td style="padding-top: 20px; padding-bottom: 40px;">회원가입 약관 페이지입니다.<br>
+            기본적인 필수 약관 체크후 넘어갈 수 있습니다.</td>
+            <td style="padding-top: 20px; padding-bottom: 40px;">약관 동의 후 다음 페이지입니다.<br>
+              회원 가입때 아이디 중복 체크는 ajax를 써서 자동으로 체크합니다.<br>
+              비밀번호 확인, 이메일은 유효성 검사처리 되어 있습니다.<br>
+              주소는 다음 주소검색 API를 사용했습니다.</td>
           </tr>
           <tr>
-            <td><img src="../img/petner_map.JPG" style="margin-right:150px; width: 400px; height: 300px; border: 1px solid rgb(240, 184, 205);" onclick="full_scr3();"></td>
-            <td><img src="../img/petner_qna.JPG" style="width: 400px; height: 300px; border: 1px solid rgb(240, 184, 205);" onclick="full_scr4();"></td>
+            <td><img src="../img/doit_message.png" style="margin-right:150px; width: 400px; height: 300px; border: 1px solid rgb(240, 184, 205);" onclick="full_scr3();"></td>
+            <td><img src="../img/doit_event.JPG" style="width: 400px; height: 300px; border: 1px solid rgb(240, 184, 205);" onclick="full_scr4();"></td>
           </tr>
           <Tr>
-            <td style="padding-top: 20px; padding-bottom: 40px;">상세페이지 중 상세정보 탭입니다.<br>
-            매장의 위치를 지하철, 버스, 자가용으로 오는 방법을 알려주고<Br>
-            그 외 매장에서 입력한 세부정보를 표시해줍니다.<br>
-            지도는 네이버지도 API를 사용했습니다.</td>
-            <td style="padding-top: 20px; padding-bottom: 40px;">상세페이지 중 문의 탭입니다.<br>
-            홈페이지에 관한 문의는 QNA게시판에서 가능하고<Br>
-            각 매장에 대한 문의는 이곳에 남길 수 있습니다.<br>
-            로그인처리, 대댓글이 가능합니다.</td></td>
+            <td style="padding-top: 20px; padding-bottom: 40px;">쪽지를 누르면 나오는 창입니다.<br>
+            쪽지 기능에서는 자신이 속한 그룹원을 보여줍니다.<br>
+            키보드 ↓를 누르면 자신이 속한 그룹이 있으면 그룹원을 보여줍니다.<br>
+            받은쪽지함, 새로온 쪽지함, 보낸 쪽지함, 삭제, 답신이 가능합니다.</td>
+            <td style="padding-top: 20px; padding-bottom: 40px;">이벤트 페이지입니다.<br>
+            세미나, 웨비나 등과 같은 정보를 공유하는 페이지입니다.<br>
+            글은 우선은 관리자만 쓸 수 있도록 만들었습니다.<br>
+            최근게시물, 검색, 태그 기능을 넣었습니다.</td>
           </Tr>
           <tr>
-            <td><img src="../img/petner_review.JPG" style="margin-right:150px; width: 400px; height: 300px; border: 1px solid rgb(240, 184, 205);" onclick="full_scr3();"></td>
-            <td><img src="../img/petner_star.JPG" style="width: 400px; height: 300px; border: 1px solid rgb(240, 184, 205);" onclick="full_scr4();"></td>
+            <td><img src="../img/doit_studylist.png" style="margin-right:150px; width: 400px; height: 300px; border: 1px solid rgb(240, 184, 205);" onclick="full_scr3();"></td>
+            <td><img src="../img/doit_studydetail.png" style="width: 400px; height: 300px; border: 1px solid rgb(240, 184, 205);" onclick="full_scr4();"></td>
           </tr>
           <Tr>
-            <td style="padding-top: 20px; padding-bottom: 40px;">상세페이지 중 후기 탭입니다.<br>
-            로그인을 한 사람만 후기를 남길 수 있고, 로그인한 이메일과<br>
-            후기작성자가 같으면 수정, 삭제가 가능합니다.</td>
+            <td style="padding-top: 20px; padding-bottom: 40px;">스터디 리스트 페이지입니다.<br>
+            제목, 모집중or모집종료, 개설자, 현인원/최대인원, 지역, 보증금입니다.<br>
+            SELECT 검색 기능이 들어 있습니다.</td>
+            <td style="padding-top: 20px; padding-bottom: 40px;">개설 후 디테일 페이지입니다.<br>
+            스터디 가입, 모집인원 등 세부 내용을 볼 수 있고<br>
+            참석자들의 프로필사진과 이름이 나오게 만들었습니다.</td>
+          </Tr>
+          <tr>
+            <td><img src="../img/doit_cal.png" style="margin-right:150px; width: 400px; height: 300px; border: 1px solid rgb(240, 184, 205);" onclick="full_scr3();"></td>
+            <td><img src="../img/doit_cal2.png" style="width: 400px; height: 300px; border: 1px solid rgb(240, 184, 205);" onclick="full_scr4();"></td>
+          </tr>
+          <Tr>
+            <td style="padding-top: 20px; padding-bottom: 40px;">일정등록을 누르면 보여지는 페이지입니다.<br>
+            일정제목, 날짜, 시간, 모일 장소등을 입력할 수 있고<br>
+            주소를 입력하면 지도에 나오도록 만들었습니다.</td>
+            <td style="padding-top: 20px; padding-bottom: 40px;">일정을 등록하면 캘린더에 표시됩니다.</td>
+          </Tr>
+          <tr>
+            <td><img src="../img/doit_check.png" style="margin-right:150px; width: 400px; height: 300px; border: 1px solid rgb(240, 184, 205);" onclick="full_scr3();"></td>
+            <td><img src="../img/doit_hodu.JPG" style="width: 400px; height: 300px; border: 1px solid rgb(240, 184, 205);" onclick="full_scr4();"></td>
+          </tr>
+          <Tr>
             <td style="padding-top: 20px; padding-bottom: 40px;">
-            평점(별점 5점 만점)을 남길 수 있고<br>
-            평균평점이 HOTEL리스트와 세부페이지 처음에 보이게 됩니다.</td>
+            출석 같은 경우는 다음과 같이 각자 그 일정에 출석을 했는지,<br>
+            하지 않았는지를 체크 후 등록할 수 있습니다.<br>
+            스터디 개설자가 아닌 경우는 아래쪽 수정 버튼이 보이지 않습니다.</td>
+            <td style="padding-top: 20px; padding-bottom: 40px;">호두 충전 전 페이지입니다.<br>
+            프리미엄 게시판 기능입니다.<br>
+            마일리지(재화, 돈)를 내고 자료실, 갤러리 기능을 오픈할 수 있습니다.</td>
           </Tr>
           <tr>
-            <td><img src="../img/petner_reserve.jpg" style="margin-right:150px; width: 400px; height: 300px; border: 1px solid rgb(240, 184, 205);" onclick="full_scr3();"></td>
-            <td><img src="../img/petner_pay.jpg" style="width: 400px; height: 300px; border: 1px solid rgb(240, 184, 205);" onclick="full_scr4();"></td>
+            <td><img src="../img/doit_importapi.png" style="margin-right:150px; width: 400px; height: 300px; border: 1px solid rgb(240, 184, 205);" onclick="full_scr3();"></td>
+            <td><img src="../img/doit_free.png" style="width: 400px; height: 300px; border: 1px solid rgb(240, 184, 205);" onclick="full_scr4();"></td>
           </tr>
           <Tr>
-            <td style="padding-top: 20px; padding-bottom: 40px;">예약 페이지입니다.<br>
-            사용자의 정보를 불러오고, 체크인/체크아웃 날짜를 선택하면<br>
-            숙박일수, 1박당 요금에 따른 총 결제금액을 바로 계산해서 보여주게 되고,<br>
-            DB에 이 정보들을 담게 됩니다.</td>
-            <td style="padding-top: 20px; padding-bottom: 40px;">결제 페이지입니다.<br>
-            아임포트(IMPORT) API를 사용하였고,<br>
-            실제로 결제가 되고, 나중에 아임포트 관리자모드에서 취소도 가능합니다.</td>
+            <td style="padding-top: 20px; padding-bottom: 40px;">호두 충전(결제) 창입니다.<br>
+            마일리지 충전은 아임포트API를 사용했습니다.<br>
+            카카오페이로 충전하는 모습입니다.</td>
+            <td style="padding-top: 20px; padding-bottom: 40px;">자유게시판 페이지입니다.<br>
+            커뮤니티 메뉴입니다<br>
+            공지사항, 자유게시판, Book-Share, 질문게시판으로 되어 있습니다.<br>
+            Book-Share같은 경우는 공부하다 안 쓰는 책을 무료나눔하는 용도로 만들었습니다.<br>
+            질문게시판은 에러나 공부하다 모르는 부분을 질문할 때 쓰는 용도입니다.</td>
           </Tr>
           <tr>
-            <td><img src="../img/petner_notice.JPG" style="margin-right:150px; width: 400px; height: 300px; border: 1px solid rgb(240, 184, 205);" onclick="full_scr3();"></td>
-            <td><img src="../img/petner_admin.jpg" style="width: 400px; height: 300px; border: 1px solid rgb(240, 184, 205);" onclick="full_scr4();"></td>
+            <td><img src="../img/doit_mypage.png" style="margin-right:150px; width: 400px; height: 300px; border: 1px solid rgb(240, 184, 205);" onclick="full_scr3();"></td>
+            <td><img src="../img/doit_mypage_board.png" style="width: 400px; height: 300px; border: 1px solid rgb(240, 184, 205);" onclick="full_scr4();"></td>
           </tr>
           <Tr>
-            <td style="padding-top: 20px; padding-bottom: 40px;">공지사항 및 FAQ/QNA 페이지입니다.<br>
-            게시판을 구현하였고, 공지사항은 관리자만 글을 작성할 수 있습니다.<br>
-            FAQ는 JQUERY와 JavaScript로 미적인 기능들을 추가했습니다.<br>
-            QNA는 모두가 쓰기/읽기가 가능하며, 댓글을 달 수 있습니다.</td>
-            <td style="padding-top: 20px; padding-bottom: 40px;">관리자 페이지입니다.<br>
-            사이트의 운영 정보를 볼 수 있습니다<br>
-            또, 호텔/병원/미용 등 업체들을 직접 등록할 수 있습니다.</td>
+            <td style="padding-top: 20px; padding-bottom: 40px;">마이페이지 페이지입니다.<br>
+            마일리지, 개인정보수정, 가입한 스터디리스트, <br>위시리스트 탭으로 구성되었습니다.<br>
+            마일리지(호두)는 사이트 내 재화와 같은 용도입니다.</td>
+            <td style="padding-top: 20px; padding-bottom: 40px;">마이페이지-마이리스트 페이지입니다.<br>
+            자신이 쓴 글을 확인할 수 있습니다.</td>
           </Tr>
         </table>
       </div>
@@ -214,53 +242,7 @@
   <br><br><br>
   <hr class="m-0">
 
-  <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="myCode">
-    <div class="container">
-    <div class="w-100">
-      <h2 class="mb-5">myCode</h2>
-      <p>세미때 맡은 주 파트는 예약/결제 페이지였습니다.
-        <ul>
-          <li>예약 정보 및 체크인&체크아웃 날짜를 선택하면 자동으로<br>
-              숙박일수와 숙박 요금이 계산되어 나타나고, 예약자 정보를 불러옵니다.
-          </li>
-          <li><span style="font-weight: bold;">아임포트(IMPORT) API</span>를 사용하여 실제 결제를 구현하였습니다.</span></li>
-          <li>예약/결제 정보들을 DB에 담아 조회할 수 있습니다.</li>
-          <li>추가로 네이버 지도 API를 사용하여 지도를 구현하였습니다.</li>
-        </ul>
-      </p>
-    </div>
-    <div>
-    <div class="w-100 thumbnailBody">
-      <tabl>
-          <td><img src="../img/petner_code_reserve.jpg" style="width: 900px; height: 550px; margin-bottom: 20px;"></td><br>
-        </tr>
-        <Tr>
-          <td>위 코드는 예약 부분입니다. <br>
-            예약의 기본 정보들을 일단 앞의 페이지에서 불러옵니다.<br>
-            또, 체크인/체크아웃 날짜를 선택하는데 캘린더를 사용하였습니다.<br>
-            선택하게되면, JavaScript로 자동으로 숙박일수, 총 결제요금을 계산하였습니다.<br>
-            예약하기 버튼을 누르면 DB에 정보들이 담기게 됩니다. 
-            </td>
-        </Tr>
-        <tr>
-          <td><img src="../img/petner_code_pay1.jpg" style="margin-top: 40px;"></td>
-          <td><img src="../img/petner_code_pay2.jpg" style="margin-bottom: 20px;"></td><br>
-        </tr>
-
-        <Tr>
-          <td>
-              위 코드는 결제 부분입니다.<br>
-              아임포트(import)라는 API를 사용하였습니다.<br>
-              아임포트에서 가맹점 식별코드를 회원가입하여 부여받고,<br>
-              이니시스,카카오페이 등 다양한 결제 방법 중 하나를 선택하여 줍니다.<br>
-              실제로 결제가 가능하며, 취소는 관리자 페이지에서 가능합니다.
-            </td>
-        </Tr>
-      </table>
-    </div>
-
-  </div>
-  </section>
+  <!-- myCode는 추가하게 되면 할 것 -->
 
   <hr class="m-0">
 
@@ -273,12 +255,13 @@
           <h3 class="mb-0">소감</h3>
           <div class="subheading mb-3"></div>
           <p style="line-height: 30px;">
-            세미 프로젝트는 처음으로 JSP MVC2를 기반으로 프로젝트를 해봤는데<br>
-            아무래도 졸업작품을 JSP MVC1으로 해봤다보니 이해하기는 더 쉬웠다.<br>
-            또 이번 세미 프로젝트에서 결제, 지도 등 API를 사용해봐서 좋았다.<br>
-            적용하며 생기는 오류들을 잡으며 구글링해보고 알아가는 것도 많았다.<br>
-            사람들과의 관계에서도 프로젝트 양이 많다보니 팀원들과 의견이 안맞을 때도 있었는데,<br>
-            나중에는 서로 이해하며 맞춰나가며 더 배우게 되었다.<br>
+            파이널인 만큼 기획부터 개발까지 신경을 많이 썼다.<br>
+            아무래도 팀원들과 이야기도 많이하고, 개발을 하면서도 의견을 나눌게 많아<br>
+            얘기할 때 점점 프로젝트를 해서 그런가 잘 통하는 것 같아 즐겁게 개발했다.<br>
+            사내 인프라넷 같은 것도 해보고 싶었지만 중개사이트도 많은 걸 배웠다.<br>
+            Spring으로 게시판을 해보고 싶어 게시판 부분을 했고, JSP와 같은 듯 다른 Spring을 하며<br>
+            오류 잡는 것이 조금 힘들었지만 구글링과 팀원들에게 질문을 하며 많이 배운 것 같다.<br>
+            다음번에는 일정을 캘린더에 추가하는 등 조금 어려운 기능에 도전하고싶다. 
           </p>
         
         </div>
